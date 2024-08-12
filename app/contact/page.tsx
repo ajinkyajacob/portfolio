@@ -16,7 +16,7 @@ import Link from "next/link"
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'd love to hear from you! Feel free to reach out with any questions, comments, or opportunities.
+                  {`I'd love to hear from you! Feel free to reach out with any questions, comments, or opportunities.`}
                 </p>
               </div>
               <form className="grid gap-4">
@@ -48,7 +48,8 @@ import Link from "next/link"
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/in/ajinkya-jacob-2299981b3/"
+                  target={'_blank'}
                   className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground"
                   prefetch={false}
                 >

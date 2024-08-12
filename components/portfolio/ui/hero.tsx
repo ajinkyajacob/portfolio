@@ -30,6 +30,7 @@ export default function Hero({name,designation}:{name:string,designation:string}
               </div>
             </div>
             <Image
+            priority={true}
               src={profilePic}
               width={550}
               height={550}

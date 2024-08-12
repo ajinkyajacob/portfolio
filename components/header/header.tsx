@@ -14,7 +14,7 @@ export default function Header() {
         <Link
           href="#"
           className="flex items-center justify-center"
-          prefetch={false}
+          prefetch={true}
         >
           <CodeIcon className="h-6 w-6" />
           <span className="sr-only">{`Ajinkya's Portfolio`}</span>
@@ -25,7 +25,7 @@ export default function Header() {
               <Link
                 href="/"
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:bg-primary/90 focus:text-primary-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary/50 data-[state=open]:bg-primary/50"
-                prefetch={false}
+                prefetch={true}
               >
                 Home
               </Link>
@@ -34,7 +34,7 @@ export default function Header() {
               <Link
                 href="/#projects"
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:bg-primary/90 focus:text-primary-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary/50 data-[state=open]:bg-primary/50"
-                prefetch={false}
+                prefetch={true}
               >
                 Projects
               </Link>
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 href="/#about"
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:bg-primary/90 focus:text-primary-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary/50 data-[state=open]:bg-primary/50"
-                prefetch={false}
+                prefetch={true}
               >
                 About
               </Link>
@@ -52,7 +52,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:bg-primary/90 focus:text-primary-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary/50 data-[state=open]:bg-primary/50"
-                prefetch={false}
+                prefetch={true}
               >
                 Contact
               </Link>
@@ -70,7 +70,7 @@ export default function Header() {
             <Link
               href="/"
               className="flex items-center justify-center"
-              prefetch={false}
+              prefetch={true}
             >
               <CodeIcon className="h-6 w-6" />
               <span className="sr-only">{`Ajinkya's Portfolio`}</span>
@@ -79,28 +79,28 @@ export default function Header() {
               <Link
                 href="/"
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
+                prefetch={true}
               >
                 Home
               </Link>
               <Link
                 href="/#projects"
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
+                prefetch={true}
               >
                 Projects
               </Link>
               <Link
                 href="/#about"
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
+                prefetch={true}
               >
                 About
               </Link>
               <Link
                 href="/contact"
                 className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
+                prefetch={true}
               >
                 Contact
               </Link>
