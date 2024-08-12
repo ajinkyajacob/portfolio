@@ -8,9 +8,9 @@ export default function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Me</h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'm a software engineer and designer with a passion for creating innovative and user-friendly
+                  {`I'm a software engineer and designer with a passion for creating innovative and user-friendly
                   applications. I have experience working with a variety of technologies and frameworks, and I'm always
-                  eager to learn new skills.
+                  eager to learn new skills.`}
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -34,9 +34,9 @@ export default function About() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Skills</h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I have a wide range of skills, including front-end development, back-end development, design, and
-                  project management. I'm proficient in languages like JavaScript, Python, and Rust, and I'm experienced
-                  with frameworks and libraries like React, Node.js, and Rust.
+                  {`I have a wide range of skills, including front-end development, back-end development, design, and
+                  project management. I'm proficient in languages like JavaScript, Typescript, and I'm experienced
+                  with frameworks and libraries like Angular, React, Node.js`}
                 </p>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
