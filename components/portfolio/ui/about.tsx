@@ -22,7 +22,7 @@ export default function About() {
                   Contact Me
                 </Link>
                 <Link
-                  href="#"
+                  href="/AjinkyaJacobCV.pdf"
                   className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
@@ -40,6 +40,10 @@ export default function About() {
                 </p>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
+              <PiIcon className="w-5 h-5" />
+                  Angular
+                </div>
                 <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
                   <CodepenIcon className="w-5 h-5" />
                   React
@@ -48,19 +52,19 @@ export default function About() {
                   <NetworkIcon className="w-5 h-5" />
                   Node.js
                 </div>
-                <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
+                {/* <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
                   <WrenchIcon className="w-5 h-5" />
                   Rust
-                </div>
+                </div> */}
                 <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
                   <EclipseIcon className="w-5 h-5" />
                   JavaScript
                 </div>
-                <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
+                {/* <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 text-sm font-medium text-muted-foreground">
                   <PiIcon className="w-5 h-5" />
                   Python
-                </div>
-                <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 " />
+                </div> */}
+                {/* <div className="flex items-center gap-2 rounded-md bg-background px-3 py-2 " /> */}
               </div>
             </div>
           </div>
