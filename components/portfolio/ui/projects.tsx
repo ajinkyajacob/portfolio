@@ -69,7 +69,7 @@ function ProjectCard({projectName,projectDetail,index, projectLink,githubLink}:{
 }
 
 export default async function Projects() {
-  const gitRes = await fetch('https://api.github.com/users/ajinkyajacob/repos').then(async res => {
+  const gitRes = await fetch('https://api.github.com/users/ajinkyajacob/repos',{next:{revalidate:30}}).then(async res => {
 
   if (!res.ok) {
     throw new Error('Network response was not ok');
