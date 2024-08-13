@@ -17,7 +17,7 @@ function PlaceholderImage({className, alt,src}:{className: string, alt:string ,s
   )
 }
 
-function ProjectCard({projectName,projectDetail,index, projectLink}:{projectName:string,projectDetail:string,index:number, projectLink:string|undefined}) {
+function ProjectCard({projectName,projectDetail,index, projectLink,githubLink}:{projectName:string,projectDetail:string|undefined,index:number, projectLink:string|undefined, githubLink:string}) {
   return (
   <Card className="group">
                 <CardHeader>
@@ -27,14 +27,15 @@ function ProjectCard({projectName,projectDetail,index, projectLink}:{projectName
                   <div className="space-y-2">
                     <h3 className="text-lg font-bold">{projectName ? projectName: `Project ${index+1}`}</h3>
                     <p className="text-muted-foreground">
-                      {projectDetail}
+                      {projectDetail ?? <>&nbsp;&nbsp;</>}
                     </p>
                   </div>
-                  <div className="mt-4 flex justify-end">
+                  <div className={`mt-4 flex ${projectLink ? 'justify-between':'justify-start'}`}>
+                    <div>
                     {
-                      projectLink ? 
+                      githubLink ? 
                     <Link
-                      href={projectLink}
+                      href={githubLink}
                       className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus:bg-primary/90 focus:text-primary-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                       target="_blank"
@@ -44,6 +45,23 @@ function ProjectCard({projectName,projectDetail,index, projectLink}:{projectName
                       
                       :''
                     }
+                    </div>
+                    <div>
+                    {
+                      projectLink ? 
+                    <Link
+                      href={projectLink}
+                      className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus:bg-primary/90 focus:text-primary-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                      prefetch={false}
+                      target="_blank"
+                    >
+                      Live Demo
+                    </Link>
+                      
+                      :''
+                    }
+
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -81,7 +99,7 @@ export default async function Projects() {
               {
                 gitRes.map((p,i) => {
                   return (
-                    <ProjectCard projectName={p.name} projectDetail={p.description??''} index={i} key={p.id} projectLink={p.homepage} />
+                    <ProjectCard projectName={p.name} projectDetail={p.description} index={i} key={p.id} projectLink={p.homepage} githubLink={p.html_url} />
                   )
                 })
               }
